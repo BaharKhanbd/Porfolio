@@ -4,9 +4,7 @@
     name: "Bahar Khan",
     titles: ["Software Engineer", "Flutter Developer"],
     bio: [
-      "I build scalable, high-performance applications using TypeScript, JavaScript, React, Node.js, AWS, and LLM orchestration.",
-      "From crafting intuitive frontends to designing robust APIs, cloud architecture, and intelligent AI workflows, I deliver quality code that drives real impact.",
-      "Passionate about solving complex challenges in fast-paced, collaborative environments. Ready to build something exceptional together",
+      "Proficient and detail-oriented Flutter developer skilled in building responsive, scalable, and visually appealing mobile applications using Dart and modern frameworks. Committed to leveraging cutting-edge technologies and best practices to deliver seamless cross-platform solutions with exceptional user experiences. I learn every day, and if given the opportunity to learn, I can even climb mountains.",
     ],
     image: adityaPic,
     social: {
