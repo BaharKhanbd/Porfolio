@@ -1,7 +1,14 @@
 import React, { useState } from 'react';
-import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaEnvelope, FaLinkedin, FaGithub, FaXTwitter } from 'react-icons/fa6'; // FaXTwitter from react-icons/fa6
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
+const social = {
+  email: "baharkhan.dev@gmail.com",
+  linkedin: "https://www.linkedin.com/in/baharkhan/",
+  github: "https://github.com/baharkhanbd",
+  x: "https://x.com/baharkhanbd",
+};
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -24,7 +31,7 @@ const Contact = () => {
     setIsSubmitting(true);
     
     try {
-      const response = await fetch('https://formsubmit.co/adityasri.in@gmail.com', {
+      const response = await fetch('https://formsubmit.co/baharkhan.dev@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -42,12 +49,7 @@ const Contact = () => {
           pauseOnHover: true,
           draggable: true,
         });
-        // Reset form
-        setFormData({
-          name: '',
-          email: '',
-          message: ''
-        });
+        setFormData({ name: '', email: '', message: '' });
       } else {
         throw new Error('Failed to submit form');
       }
@@ -81,20 +83,26 @@ const Contact = () => {
             <div className="mt-6 space-y-4">
               <div className="flex items-center gap-3">
                 <FaEnvelope className="text-primary" />
-                <a href="mailto:adityasrivastava.niet@gmail.com" className="hover:text-primary transition-colors">
-                  adityasrivastava.niet@gmail.com
+                <a href={`mailto:${social.email}`} className="hover:text-primary transition-colors">
+                  {social.email}
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <FaLinkedin className="text-primary" />
-                <a href="https://www.linkedin.com/in/adityakumar29" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-                  linkedin.com/in/adityakumar29
+                <a href={social.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                  {social.linkedin.replace(/^https?:\/\//, '')}
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <FaGithub className="text-primary" />
-                <a href="https://github.com/adityaSrivastava29" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-                  github.com/adityaSrivastava29
+                <a href={social.github} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                  {social.github.replace(/^https?:\/\//, '')}
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <FaXTwitter className="text-primary" />
+                <a href={social.x} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                  {social.x.replace(/^https?:\/\//, '')}
                 </a>
               </div>
             </div>
