@@ -1,6 +1,6 @@
- 
 import ictDivision from '../Assets/ict.jpg';
 import europeanIt from '../Assets/eit.jpg';
+import proloyCert from '../Assets/pit.png';  
 
 export const certifications = [
   {
@@ -18,5 +18,13 @@ export const certifications = [
     period: 'Completed (3 Months)',
     link: 'https://drive.google.com/file/d/1LCoEOgZxLgfJZkHVSsu-votCRfydmQKJ/view?usp=drive_link',
     image: europeanIt,
+  },
+  {
+    icon: 'web',
+    name: 'Comprehensive Web Design & Development Course',
+    issuer: 'PROLOY IT Training Center',
+    period: 'Completed (6 Months)',
+    link: 'https://drive.google.com/file/d/1LCoEOgZxLgfJZkHVSsu-votCRfydmQKJ/view?usp=drive_link',  
+    image: proloyCert,
   },
 ];

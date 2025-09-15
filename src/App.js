@@ -6,6 +6,7 @@ import About from './components/About';
 import Footer from './components/Footer';
 import { SkeletonGrid } from './components/ui/skeleton';
 import './index.css';
+
 const Experience = React.lazy(() => import('./components/Experience'));
 const Projects = React.lazy(() => import('./components/Projects'));
 const Skills = React.lazy(() => import('./components/Skills'));
@@ -17,38 +18,54 @@ function App() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Helmet>
-        <title>Aditya Kumar Srivastava - Software Engineer</title>
-        <meta name="description" content="Welcome to Aditya Kumar Srivastava's portfolio website. I'm Aditya Kumar Srivastava, a passionate software developer showcasing my projects, skills, and experience." />
-        <meta name="keywords" content="Adityasri, AdityaSri, adityasri.in, Aditya Kumar Srivastava,adityasri portfolio, Software Engineer" />
-        <meta name="author" content="Aditya Kumar Srivastava" />
-        <meta property="og:title" content="Aditya Kumar Srivastava - Portfolio" />
-        <meta property="og:description" content="Welcome to my portfolio website. Explore my projects, skills, and professional experience." />
+        <title>Bahar Khan - Flutter Developer</title>
+        <meta
+          name="description"
+          content="Portfolio website of Bahar Khan, a Flutter Developer. Showcasing projects, skills, and professional experience in mobile app development."
+        />
+        <meta
+          name="keywords"
+          content="Bahar Khan, Flutter Developer, Mobile App Developer, Dart, Flutter, Portfolio, Cross-Platform Apps"
+        />
+        <meta name="author" content="Bahar Khan" />
+        <meta property="og:title" content="Bahar Khan - Flutter Developer Portfolio" />
+        <meta
+          property="og:description"
+          content="Explore Bahar Khan's portfolio website. Projects, skills, and experience in Flutter mobile app development."
+        />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://adityasri.in" />
+        <meta property="og:url" content="https://baharkhan.vercel.app/" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Aditya Kumar Srivastava - Portfolio" />
-        <meta name="twitter:description" content="Welcome to my portfolio website. Explore my projects, skills, and professional experience." />
-        <link rel="canonical" href="https://adityasri.in" />
-        {/* SEO: Structured Data for Google */}
+        <meta name="twitter:title" content="Bahar Khan - Flutter Developer Portfolio" />
+        <meta
+          name="twitter:description"
+          content="Explore Bahar Khan's portfolio website. Projects, skills, and experience in Flutter mobile app development."
+        />
+        <link rel="canonical" href="https://baharkhan.vercel.app/" />
+
+        {/* Structured Data for Google */}
         <script type="application/ld+json">{`
           {
             "@context": "https://schema.org",
             "@type": "Person",
-            "name": "Aditya Kumar Srivastava",
-            "url": "https://adityasri.in",
+            "name": "Bahar Khan",
+            "url": "https://baharkhan.vercel.app/",
             "sameAs": [
-              "https://github.com/adityasrivastava29",
-              "https://www.linkedin.com/in/adityakumar29/",
-              "https://x.com/adityasri_in"
+              "https://github.com/baharkhanbd",
+              "https://www.linkedin.com/in/baharkhan/",
+              "https://x.com/baharkhanbd"
             ],
-            "jobTitle": "Software Engineer",
-            "description": "Portfolio website of Aditya Kumar Srivastava, Software Engineer. Projects, skills, experience, and contact information."
+            "jobTitle": "Flutter Developer",
+            "description": "Portfolio website of Bahar Khan, Flutter Developer. Projects, skills, experience, and contact information."
           }
         `}</script>
-        {/* SEO: Robots meta tag */}
+
+        {/* Robots meta tag */}
         <meta name="robots" content="index, follow" />
       </Helmet>
+
       <Header />
+
       <div className="main-content">
         <About />
         <Suspense fallback={<div className="container py-16"><SkeletonGrid count={6} /></div>}>
@@ -60,6 +77,7 @@ function App() {
           <Contact />
         </Suspense>
       </div>
+
       <Footer />
     </div>
   );
