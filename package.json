@@ -2,7 +2,7 @@
   "name": "bahar-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://adityasrivastava29.github.io",
+  "homepage": "https://baharkhanbd.github.io/Porfolio",
   "main": "index.js",
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.11",
