@@ -44,21 +44,30 @@ function App() {
         <link rel="canonical" href="https://baharkhan.vercel.app/" />
 
         {/* Structured Data for Google */}
-        <script type="application/ld+json">{`
-          {
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "Bahar Khan",
-            "url": "https://baharkhan.vercel.app/",
-            "sameAs": [
-              "https://github.com/baharkhanbd",
-              "https://www.linkedin.com/in/baharkhan/",
-              "https://x.com/baharkhanbd"
-            ],
-            "jobTitle": "Flutter Developer",
-            "description": "Portfolio website of Bahar Khan, Flutter Developer. Projects, skills, experience, and contact information."
-          }
-        `}</script>
+
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Mirpur",
+                "addressRegion": "Dhaka",
+                "postalCode": "1216",
+                "streetAddress": "Mirpur 2, Mirpur 1216"
+              },
+              "email": "mailto:baharkhan.dev@gmail.com",
+              "image": "./Assets/baharkhan.png",
+              "jobTitle": "Flutter Developer",
+              "name": "Bahar Khan",
+              "telephone": "+8801581183499",
+              "url": "https://baharkhan.vercel.app/"
+            }
+          `}
+        </script>
+
+
 
         {/* Robots meta tag */}
         <meta name="robots" content="index, follow" />
