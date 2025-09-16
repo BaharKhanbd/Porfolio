@@ -110,7 +110,7 @@ const Skills = () => {
                     }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <div className="relative">
+                    <div className="relative flex items-center justify-center">
                       {/* Glow effect on hover */}
                       <motion.div 
                         className="absolute inset-0 bg-gradient-to-r from-primary/20 to-purple-500/20 rounded-xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
